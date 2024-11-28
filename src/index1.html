@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Certificates</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        @keyframes myAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+    <style>
+        section {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #3801ff;
+        }
+        .images-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
+        .column div {
+            margin-bottom: 15px;
+        }
+        .column img {
+            width: 100%;
+            height: auto; 
+        }
+        li {
+            list-style: none;
+            margin: 10px;
+            padding: 20px;
+            border: 3px solid #050505;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        li:hover {
+            color: #00f7ff;
+            transform: scale(1.1);
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            .column {
+                flex: 100%;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .column {
+                flex: 100%;
+            }
+            li {
+                padding: 10px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Certificates</h1>
+        <li style="animation: myAnimation 1s ease-in-out; color: rgb(27, 245, 8);">
+            <i class="icofont-rounded-right"></i>
+            <strong>Home:</strong>
+            <a href="index.html" style="color: rgb(255, 0, 0);">ClickMe</a>
+        </li>
+        <div class="images-gallery">
+            <div class="column">
+                <div>
+                    <img src="./images/certi1.jpg" alt="img">
+                </div>
+                <div>
+                    <img src="./images/certi4.jpg" alt="img">
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <img src="./images/certi2.jpg" alt="img">
+                </div>
+                <div>
+                    <img src="./images/pau.png" alt="img">
+                </div>
+            </div>
+            <div class="column">
+                <div>
+                    <img src="./images/certi3.jpg" alt="img">
+                </div>
+                <div>
+                    <img src="./images/certi5.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="" async defer></script>
+</body>
+</html>
